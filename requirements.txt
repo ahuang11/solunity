@@ -4,3 +4,5 @@ holoviews
 bokeh
 pandas
 hvplot
+xarray
+matplotlib

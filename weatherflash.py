@@ -193,7 +193,7 @@ class WeatherFlash():
         except KeyError:
             pass
 
-        return plot.opts(title='')
+        return plot.opts(title='', tools=['hover'])
 
     def generate_tooltip(self, row, stat, rec=None, prev_rec=None):
         var = getattr(row, f'idx{stat}')()
