@@ -9,6 +9,13 @@ import holoviews as hv
 import constant as C
 
 
+# read just once
+df = pd.concat(
+    pd.read_pickle(fi) for fi in
+    sorted(glob.iglob(C.PATHS['newborns']))
+)
+
+
 class Historname(param.Parameterized):
     names = param.String()
     gender = param.Selector(objects=['All', 'Either', 'Female', 'Male'])
@@ -71,10 +78,7 @@ class Historname(param.Parameterized):
         )
         self.markdown = pn.pane.Markdown(sizing_mode='stretch_width')
 
-        self.df = pd.concat(
-            pd.read_pickle(fi) for fi in
-            sorted(glob.iglob(C.PATHS['newborns']))
-        )
+        self.df = df
         self.random_name(None)
 
     def random_name(self, event):
