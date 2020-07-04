@@ -1,0 +1,56 @@
+body {
+    font-family: Calibri Light;
+    color: #5B5B5B;
+    font-size: 18px;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+p {
+    font-size: 15px;
+}
+
+.bk.bk-input {
+    font-size: 16px;
+}
+
+.bk.bk-slider-title {
+    font-size: 16px;
+}
+
+.bk.bk-btn.bk-btn-default {
+    font-size: 16px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 3px 5px;
+    border-radius: 6px;
+    min-width: 180px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0%;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
