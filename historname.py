@@ -74,7 +74,9 @@ class Historname(param.Parameterized):
             self,
             parameters=['names'],
             widgets={
-                'names': {'name': '', 'placeholder': 'Enter a name here!',
+                'names': {'name': '',
+                          'placeholder': ('Enter a name here; '
+                                          'wildcards (*) supported!'),
                           'height': 38},
             },
             align='center', sizing_mode='stretch_width'
