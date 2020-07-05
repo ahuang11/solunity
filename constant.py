@@ -5,7 +5,7 @@ PATHS['base'] = os.path.dirname(os.path.abspath(__file__))
 PATHS['css'] = os.path.join(PATHS['base'], 'theme.css')
 PATHS['data'] = os.path.join(PATHS['base'], 'data')
 PATHS['asos'] = os.path.join(PATHS['data'], 'asos_meta.pkl')
-PATHS['newborns'] = os.path.join(PATHS['data'], 'newborns.*.pkl')
+PATHS['newborns'] = os.path.join(PATHS['data'], 'newborns.db')
 PATHS['tmp'] = os.path.join(PATHS['data'], 'tmp_ds.npy')
 
 FMTS = {}
